@@ -68,7 +68,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-
 #pragma mark - UIViewController
 
 - (void)loadView {
