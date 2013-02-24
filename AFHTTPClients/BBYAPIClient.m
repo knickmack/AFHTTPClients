@@ -49,6 +49,7 @@ static NSString * const kBBYAPIKey = @"YOUR_API_KEY";
     
     [mutableParameters addEntriesFromDictionary:parameters];
     mutableParameters[@"apiKey"] = kBBYAPIKey;
+    // Must pass format=json as a parameter, as the API does not respond to Accept header
     mutableParameters[@"format"] = @"json";
     
     return [super requestWithMethod:method path:path parameters:[mutableParameters copy]];
