@@ -1,2 +1,2 @@
 # AFHTTPClients
-*** A growing collection of AFHTTPClients for all your API needs ***
+A growing collection of AFHTTPClients for all your API needs
