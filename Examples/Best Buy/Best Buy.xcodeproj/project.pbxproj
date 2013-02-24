@@ -26,6 +26,7 @@
 		280E4E3416D9B41600A81822 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E4E2B16D9B41600A81822 /* UIImageView+AFNetworking.m */; };
 		280E4E3816D9B6C100A81822 /* BBYAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E4E3716D9B6C100A81822 /* BBYAPIClient.m */; };
 		280E4E3C16D9BC8000A81822 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E4E3B16D9BC8000A81822 /* CategoriesViewController.m */; };
+		280E4E3F16D9C35A00A81822 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E4E3E16D9C35A00A81822 /* ProductsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		280E4E3716D9B6C100A81822 /* BBYAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBYAPIClient.m; sourceTree = "<group>"; };
 		280E4E3A16D9BC8000A81822 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesViewController.h; path = Classes/CategoriesViewController.h; sourceTree = "<group>"; };
 		280E4E3B16D9BC8000A81822 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesViewController.m; path = Classes/CategoriesViewController.m; sourceTree = "<group>"; };
+		280E4E3D16D9C35A00A81822 /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsViewController.h; path = Classes/ProductsViewController.h; sourceTree = "<group>"; };
+		280E4E3E16D9C35A00A81822 /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsViewController.m; path = Classes/ProductsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,8 @@
 			children = (
 				280E4E3A16D9BC8000A81822 /* CategoriesViewController.h */,
 				280E4E3B16D9BC8000A81822 /* CategoriesViewController.m */,
+				280E4E3D16D9C35A00A81822 /* ProductsViewController.h */,
+				280E4E3E16D9C35A00A81822 /* ProductsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				280E4E3416D9B41600A81822 /* UIImageView+AFNetworking.m in Sources */,
 				280E4E3816D9B6C100A81822 /* BBYAPIClient.m in Sources */,
 				280E4E3C16D9BC8000A81822 /* CategoriesViewController.m in Sources */,
+				280E4E3F16D9C35A00A81822 /* ProductsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

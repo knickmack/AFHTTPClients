@@ -8,6 +8,7 @@
 
 #import "CategoriesViewController.h"
 #import "BBYAPIClient.h"
+#import "ProductsViewController.h"
 
 @interface CategoriesViewController ()
 
@@ -35,7 +36,7 @@
     [[BBYAPIClient sharedClient] getPath:@"categories" parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *response) {
         NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)];
         
-        _categories = [(NSArray *)response[@"categories"] sortedArrayUsingDescriptors:@[ descriptor ]];
+        _categories = [(NSArray *)[response valueForKeyPath:@"categories"] sortedArrayUsingDescriptors:@[ descriptor ]];
         [weakSelf.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
@@ -66,6 +67,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NSDictionary *category = [self.categories objectAtIndex:indexPath.row];
+    ProductsViewController *productsViewController = [[ProductsViewController alloc] initWithCategory:category];
+    
+    [self.navigationController pushViewController:productsViewController animated:YES];
 }
 
 #pragma mark - UIViewController
