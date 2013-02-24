@@ -52,6 +52,9 @@ static NSString * const kBBYAPIKey = @"YOUR_API_KEY";
     // Must pass format=json as a parameter, as the API does not respond to Accept header
     mutableParameters[@"format"] = @"json";
     
+    // Given the spaces and brackets often used in the path, it requires URL encoding
+    path = [path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     return [super requestWithMethod:method path:path parameters:[mutableParameters copy]];
 }
 
