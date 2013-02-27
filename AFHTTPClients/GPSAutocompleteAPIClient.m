@@ -9,7 +9,7 @@
 #import "GPSAutocompleteAPIClient.h"
 #import "AFJSONRequestOperation.h"
 
-static NSString * const kGPSAutocompleteAPIBaseURLString = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
+static NSString * const kGPSAutocompleteAPIBaseURLString = @"https://maps.googleapis.com/maps/api/place/autocomplete";
 static NSString * const kGPSAutocompleteAPIKey = @"YOUR_API_KEY";
 
 @implementation GPSAutocompleteAPIClient
